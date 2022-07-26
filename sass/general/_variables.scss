@@ -1,0 +1,73 @@
+/* Variables */
+$font-principal: 'Georgia';
+$primary: #4D71A5;
+
+/* Map */
+$color: (
+    primary: whitesmoke,
+    secondary: black,
+    extra: #ACAD94,
+    main: #4D71A5,
+);
+
+/* Map-get, Extend */
+.card-body {
+    color: map-get($color,'primary');
+};
+.bvh1{
+    color: map-get($color,'primary');
+    font-family: $font-principal;
+    font-weight: bold;
+};
+.bvp {
+    @extend .bvh1;
+    font-size: large;
+    font-weight: lighter;
+};
+
+/* Mixins */
+@mixin oh {
+    overflow: hidden;
+};
+@mixin todo ($fondo, $fimagen){
+    background-color: $fondo;
+    background-image: $fimagen;
+}
+.page-footer, .navbar {
+	@include todo (whitesmoke, none)
+}
+#container-index {
+	@include todo (none, transparent)
+}
+.card {
+    @include todo (transparent, none)
+}
+#galeria {
+    @include todo ($primary, none)
+}
+main {
+	@include todo ($primary, none)
+}
+#mainix {
+	@include todo (whitesmoke, none)
+}
+.jumbotron {
+	@include todo (#4D71A5, none)
+}
+#section-cont {
+    color: map-get($color,'primary');
+    @include todo (#4D71A5, none)
+}
+#about-section {
+    color: map-get($color, 'primary' );
+}
+
+
+
+
+
+
+
+
+
+
