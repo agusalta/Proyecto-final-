@@ -43,8 +43,21 @@ main {
 }
 
 #mainix {
-  background-color: whitesmoke;
-  background-image: none;
+  background-color: none;
+  background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bilbao-titulo {
+  font-family: ;
 }
 
 .jumbotron {
@@ -66,6 +79,10 @@ main {
   margin: 0;
   padding: 0;
   font-family: "Georgia";
+}
+
+@font-face {
+  src: url(/assets/fonts/);
 }
 
 main, footer, #lineas {

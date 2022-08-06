@@ -49,7 +49,8 @@ main {
 	@include todo ($primary, none)
 }
 #mainix {
-	@include todo (whitesmoke, none)
+	@include todo (none, url(/assets/imagenes/Search_Starry\ Night_Hero.png));
+    background-repeat: no-repeat;
 }
 .jumbotron {
 	@include todo (#4D71A5, none)
