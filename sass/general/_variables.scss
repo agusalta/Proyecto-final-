@@ -48,10 +48,6 @@ $color: (
 main {
 	@include todo ($primary, none)
 }
-#mainix {
-	@include todo (none, url(/assets/imagenes/Search_Starry\ Night_Hero.png));
-    background-repeat: no-repeat;
-}
 .jumbotron {
 	@include todo (#4D71A5, none)
 }
@@ -60,7 +56,7 @@ main {
     @include todo (#4D71A5, none)
 }
 #about-section {
-    color: map-get($color, 'primary' );
+    color: map-get($color,'primary');
 }
 
 

@@ -1,7 +1,6 @@
 /* Variables */
 /* Map */
 /* Map-get, Extend */
-
 .card-body {
   color: whitesmoke;
 }
@@ -41,11 +40,6 @@
 main {
   background-color: #4D71A5;
   background-image: none;
-}
-
-#mainix {
-  background-color: none;
-  background-repeat: no-repeat
 }
 
 .jumbotron {
@@ -133,28 +127,30 @@ card-img-top {
 
 #boton-cont, .btn {
   background-color: transparent;
+  border: 1px solid white;
   color: white;
-  border: 1px solid white !important;
 }
 #boton-cont:hover, .btn:hover {
   background-color: transparent;
-  box-shadow: 0 0 10px white, 0 0 40px #B8BA6B;
+  box-shadow: 0 0 10px white, 0 0 40px #B8BA6B, 0 0 80px #B8BA6B;
   transition-delay: 0.5;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   #lineas {
     display: none;
   }
   .jumbotron {
     text-align: center;
     transform: translateY(5rem);
-  }
-  #container-index {
+    height: 100vh;
     background-color: transparent;
   }
+  #mainix {
+    background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+  }
   #div-bv {
-    transform: translateY(-5rem);
+    transform: translateY(5rem);
   }
   .img-fluid {
     display: none;
