@@ -225,9 +225,9 @@ card-img-top {
   }
   .jumbotron {
     text-align: center;
-    transform: translateY(5rem);
     background-color: transparent;
     height: 100vh;
+    transform: translateY(5rem);
   }
   #mainix {
     background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
@@ -237,7 +237,7 @@ card-img-top {
     background-color: transparent;
   }
   #div-bv {
-    transform: translateY(5rem);
+    transform: translateY(-2rem);
   }
   .img-fluid {
     display: none;
