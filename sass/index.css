@@ -45,7 +45,6 @@ main {
 #section-cont {
   color: whitesmoke;
   background-color: #4D71A5;
-  background-image: none;
 }
 
 #about-section {
@@ -92,13 +91,32 @@ form {
   width: 80%
 }
 
+#info, #foto {
+  background-color: #1E2D26;
+  padding: 1rem;
+}
+
+#info {
+  padding: 5rem 3rem 5rem 3rem;
+}
+
+#info p {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+#am {
+  background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+}
+
 .container-cont {
   border: 1px solid whitesmoke;
   padding: 4rem;
 }
 
 .img-fluid {
-  height: 20rem !important;
+  height: 100% !important;
   width: auto;
   border-radius: 5px;
 }
@@ -161,6 +179,9 @@ card-img-top {
   }
   .img-fluid {
     display: none;
+  }
+  #foto {
+    background-color: whitesmoke;
   }
 }
 @media (max-width: 900px) {
