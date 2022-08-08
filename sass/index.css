@@ -44,6 +44,58 @@ main {
 
 #section-cont {
   color: whitesmoke;
+  background-color: #4D71A5;
+  background-image: none;
+}
+
+#about-section {
+  color: whitesmoke;
+}
+
+/* Variables */
+/* Map */
+/* Map-get, Extend */
+.card-body {
+  color: whitesmoke;
+}
+
+.bvh1, .bvp {
+  color: whitesmoke;
+  font-family: "Georgia";
+  font-weight: bold;
+}
+
+.bvp {
+  color: whitesmoke;
+  font-family: "Georgia";
+  font-weight: bold;
+  font-size: large;
+  font-weight: lighter;
+}
+
+/* Mixins */
+.page-footer, .navbar {
+  background-color: whitesmoke;
+  background-image: none;
+}
+
+#container-index {
+  background-color: none;
+  background-image: transparent;
+}
+
+.card {
+  background-color: transparent;
+  background-image: none;
+}
+
+#galeria, main {
+  background-color: #4D71A5;
+  background-image: none;
+}
+
+#section-cont {
+  color: whitesmoke;
   background-color: #243560;
 }
 
@@ -88,7 +140,7 @@ main, footer, #lineas {
 }
 
 form {
-  width: 80%
+  width: 80%;
 }
 
 #galeria, #mainGal {
@@ -111,7 +163,6 @@ form {
 #info {
   padding: 5rem 3rem 5rem 3rem;
 }
-
 #info p {
   font-size: x-large;
   display: flex;
@@ -160,6 +211,7 @@ card-img-top {
   border: 1px solid white;
   color: white;
 }
+
 #boton-cont:hover, .btn:hover {
   background-color: transparent;
   box-shadow: 0 0 10px white, 0 0 40px #B8BA6B;
@@ -202,12 +254,15 @@ card-img-top {
     margin-top: auto;
     margin-bottom: auto;
   }
-  iframe{
+  iframe {
     display: none;
   }
   #section-cont {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
     max-height: fit-content;
     height: 320px;
     overflow: auto;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

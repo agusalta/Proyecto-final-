@@ -1,98 +1,229 @@
 @import './general/variables';
 
-* {
-    margin: 0;
-    padding: 0;
-	font-family: $font-principal; 
-}
-main, footer, #lineas{
-	@include oh;
-}
-.footer-copyright{
+/* Variables */
+/* Map */
+/* Map-get, Extend */
+
+.card-body {
+	color: whitesmoke;
+  }
+  
+  .bvh1 {
+	color: whitesmoke;
+	font-family: "Georgia";
+	font-weight: bold;
+  }
+  
+  .bvp {
+	color: whitesmoke;
+	font-family: "Georgia";
+	font-weight: bold;
+	font-size: large;
+	font-weight: lighter;
+  }
+  
+  /* Mixins */
+  
+  .page-footer, .navbar {
+	background-color: whitesmoke;
+	background-image: none;
+  }
+  
+  #container-index {
+	background-color: none;
+	background-image: transparent;
+  }
+  
+  .card {
+	background-color: transparent;
+	background-image: none;
+  }
+  
+  #galeria, main {
+	background-color: #4D71A5;
+	background-image: none;
+  }
+  
+  #section-cont {
+	color: whitesmoke;
+	background-color: #243560;
+  }
+  
+  #about-section {
+	color: whitesmoke;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	font-family: "Georgia";
+  }
+  
+  main, footer, #lineas {
+	overflow: hidden;
+  }
+  
+  .footer-copyright {
 	background-color: transparent !important;
-}
-.nav-item{
+  }
+  
+  .nav-item {
 	margin-left: 4rem;
-}
-.item{
-	transition: .5s ease-in-out;
+  }
+  
+  .item {
+	transition: 0.5s ease-in-out;
+  
 	&:hover {
-		filter: brightness(80%);
+	  filter: brightness(80%);
 	}
-}
-.nav-link{
-	&:hover {
-		color: $primary !important;
-		border: 1px solid $primary;
-		border-radius: 15px;
-	}
-}
-.site-section{
+  }
+  
+  .nav-link:hover {
+	color: #4D71A5 !important;
+	border: 1px solid #4D71A5;
+	border-radius: 15px;
+  }
+  
+  .site-section {
 	display: flex;
 	padding: 5rem;
-}
-.container-cont{
+  }
+  
+  form {
+	width: 80%;
+  }
+  
+  #galeria, #mainGal {
+	background-color: #1E2D26;
+  }
+  
+  .jumbotron {
+	background-color: #243560;
+  }
+  
+  #rowIn {
+	background-color: whitesmoke;
+  }
+  
+  #info, #foto {
+	background-color: #1E2D26;
+	padding: 1rem;
+  }
+  
+  #info {
+	padding: 5rem 3rem 5rem 3rem;
+  
+	p {
+	  font-size: x-large;
+	  display: flex;
+	  justify-content: center;
+	}
+  }
+  
+  #am {
+	background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+	background-size: 100%;
+	background-attachment: fixed;
+  }
+  
+  .container-cont {
 	border: 1px solid whitesmoke;
 	padding: 4rem;
-}
-.img-fluid{
-	height: 20rem !important;
+  }
+  
+  .img-fluid {
+	height: 100% !important;
 	width: auto;
 	border-radius: 5px;
-}
-#galeria-div{
-    margin: 1rem !important;
+  }
+  
+  #galeria-div {
+	margin: 1rem !important;
 	border: none;
 	border-radius: 10px;
 	margin-bottom: 14px;
-    padding-top: 0px;
-}
-.card{
+	padding-top: 0px;
+  }
+  
+  .card {
 	border: none;
 	margin: 2rem;
 	padding-top: 15px;
-	font-size: large;
+	font-size: larger;
 	font-style: italic;
-}
-card-img-top{
-	border: 1px solid whitesmoke;
+  }
+  
+  card-img-top {
 	border-radius: 20px;
-}
-#boton-cont, .btn{
+  }
+  
+  #boton-cont, .btn {
 	background-color: transparent;
 	border: 1px solid white;
-	&:hover {
-		background-color: #ACAD94;
-		box-shadow: 0 0 10px #ffff, 0 0 40px #B8BA6B, 0 0 80px #B8BA6B;
-		transition-delay: 0.5;
-	}
-}
-@media (max-width: 990px){
+	color: white;
+  }
+  
+  #boton-cont:hover, .btn:hover {
+	background-color: transparent;
+	box-shadow: 0 0 10px white, 0 0 40px #B8BA6B;
+	transition-delay: 0.5;
+  }
+  
+  @media (max-width: 991px) {
 	#lineas {
-		display: none;
+	  display: none;
 	}
+  
 	.jumbotron {
-		text-align: center;
-		transform: translateY(5rem);
+	  text-align: center;
+	  transform: translateY(5rem);
+	  background-color: transparent;
+	  height: 100vh;
 	}
+  
+	#mainix {
+	  background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+	  height: 100vh;
+	}
+  
 	#container-index {
-		background-color: transparent;
+	  background-color: transparent;
 	}
+  
 	#div-bv {
-		transform: translateY(-5rem);
+	  transform: translateY(5rem);
 	}
-	.img-fluid{
-		display: none;
+  
+	.img-fluid {
+	  display: none;
 	}
-}
-@media (max-width: 768px){
+  
+	#foto {
+	  background-color: whitesmoke;
+	}
+  
+	#rowIn {
+	  background-color: transparent;
+	}
+  }
+  
+  @media (max-width: 900px) {
 	form {
-		overflow: visible;
-		position: relative;
+	  overflow: visible;
+	  margin-top: auto;
+	  margin-bottom: auto;
 	}
-	#footer-cont {
-		position: absolute;
-		display: none;
-		bottom: 0;
+  
+	iframe {
+	  display: none;
 	}
-}
+  
+	#section-cont {
+	  max-height: fit-content;
+	  height: 320px;
+	  overflow: auto;
+	}
+  }
+  
+  /*# sourceMappingURL=index.css.map */
