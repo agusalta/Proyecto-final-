@@ -108,6 +108,8 @@ form {
 
 #am {
   background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 .container-cont {

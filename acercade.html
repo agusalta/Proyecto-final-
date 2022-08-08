@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bilbao</title>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/Bilbao.ico"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="sass/index.css" rel="stylesheet">
     <!-- Bs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -54,13 +55,14 @@
           <div class="row">
 
             <!-- foto -->
-            <div id="foto" class="col-lg-6 d-flex justify-content-center align-items-center">
+            <div id="foto" data-aos="flip-up" class="col-lg-6 d-flex justify-content-center align-items-center">
               <div class="pb-3">
                 <img src="assets/imagenes/playa.webp" class="img-fluid">
               </div>
             </div>
+
               <!-- información -->
-              <div id="info" class="col-lg-6">
+              <div id="info" data-aos="flip-up" class="col-lg-6">
                 <h1 class="section-title text-center font-weight-bold">Sobre mí</h2><br>
                 <p>Soy arquitecta y artista plástica. En general me gusta trabajar con acrílicos y, a veces, con técnicas mixtas.</p>
                 <p> Me llaman las manchas y los colores, a menudo las pinturas me sugieren como seguir.
@@ -79,14 +81,14 @@
           <div class="row">
 
             <!-- foto -->
-            <div id="foto" class="col-lg-6 d-flex justify-content-center align-items-center">
+            <div id="foto" data-aos="flip-up" class="col-lg-6 d-flex justify-content-center align-items-center">
               <div class="pb-3">
                 <img src="assets/imagenes/sobremi.png" class="img-fluid">
               </div>
             </div>
             
              <!-- información -->
-             <div id="info" class="col-lg-6">
+             <div id="info" data-aos="flip-up" class="col-lg-6">
               <h2 class="section-title text-center font-weight-bold">¿Qué herramientas uso?</h2><br>
               
               <p>Todas. Espátulas, pinceles, esponjas, las manos... 
@@ -104,7 +106,7 @@
     </main>
     
 
-    <section class="section-no-border pb-3">
+    <section class="section-no-border pb-3" data-aos="zoom-in" >
       <footer class="page-footer font-small mdb-color pt-4" style="padding-left: 0px;">
         <div class="container text-center text-md-left">
   
@@ -207,6 +209,11 @@
         </div>
       </footer>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
