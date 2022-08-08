@@ -88,6 +88,10 @@ main, footer, #lineas {
   padding: 5rem;
 }
 
+form {
+  width: 40vw;
+}
+
 .container-cont {
   border: 1px solid whitesmoke;
   padding: 4rem;
@@ -164,9 +168,15 @@ card-img-top {
     overflow: visible;
     position: relative;
   }
+  iframe{
+    display: none;
+  }
   #footer-cont {
+    bottom: 0;
     position: absolute;
     display: none;
-    bottom: 0;
+  }
+  #section-cont {
+    height: 100vh;
   }
 }/*# sourceMappingURL=index.css.map */
