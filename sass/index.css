@@ -89,7 +89,7 @@ main, footer, #lineas {
 }
 
 form {
-  width: 40vw;
+  width: 80%
 }
 
 .container-cont {
@@ -163,7 +163,7 @@ card-img-top {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   form {
     overflow: visible;
     margin-top: auto;
