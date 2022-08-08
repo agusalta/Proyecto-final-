@@ -55,6 +55,12 @@ main {
 #about-section {
     color: map-get($color,'primary');
 }
+#am {
+    @include todo (none, url(/assets/imagenes/Search_Starry\ Night_Hero.png));
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+
 
 
 

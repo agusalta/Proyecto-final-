@@ -52,6 +52,13 @@ main {
   color: whitesmoke;
 }
 
+#am {
+  background-color: none;
+  background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
 /* Variables */
 /* Map */
 /* Map-get, Extend */
@@ -161,29 +168,23 @@ form {
 }
 
 #info {
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 5rem;
 }
+
 #info p {
-  font-size: x-large;
+  font-size: larger;
   display: flex;
   justify-content: center;
-}
-
-#am {
-  background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
-  background-size: 100%;
-  background-attachment: fixed;
-}
-
-.container-cont {
-  border: 1px solid whitesmoke;
-  padding: 4rem;
 }
 
 .img-fluid {
   height: 100% !important;
   width: auto;
-  border-radius: 5px;
+}
+
+.container-cont {
+  border: 1px solid whitesmoke;
+  padding: 4rem;
 }
 
 #galeria-div {
@@ -263,6 +264,14 @@ card-img-top {
     max-height: fit-content;
     height: 320px;
     overflow: auto;
+  }
+}
+@media (max-width: 375px) {
+  #info {
+    font-size: larger;
+  }
+  #h1ac, #h2ac {
+    font-size: larger;
   }
 }
 /*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

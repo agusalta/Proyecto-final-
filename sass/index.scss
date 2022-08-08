@@ -112,30 +112,23 @@
   }
   
   #info {
-	padding: 5rem 3rem 5rem 3rem;
+	padding: 5rem;
   
 	p {
-	  font-size: x-large;
+	  font-size: larger;
 	  display: flex;
 	  justify-content: center;
 	}
   }
-  
-  #am {
-	background-image: url(/assets/imagenes/Search_Starry\ Night_Hero.png);
-	background-size: 100%;
-	background-attachment: fixed;
+
+  .img-fluid {
+	height: auto !important;
+	width: auto;
   }
-  
+    
   .container-cont {
 	border: 1px solid whitesmoke;
 	padding: 4rem;
-  }
-  
-  .img-fluid {
-	height: 100% !important;
-	width: auto;
-	border-radius: 5px;
   }
   
   #galeria-div {
@@ -223,6 +216,14 @@
 	  max-height: fit-content;
 	  height: 320px;
 	  overflow: auto;
+	}
+  }
+  @media (max-width: 375px) {
+	#info {
+		font-size: larger;
+	}
+	#h1ac, #h2ac {
+		font-size: larger;
 	}
   }
   
