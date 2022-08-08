@@ -44,7 +44,7 @@ main {
 
 #section-cont {
   color: whitesmoke;
-  background-color: #4D71A5;
+  background-color: #243560;
 }
 
 #about-section {
@@ -91,6 +91,18 @@ form {
   width: 80%
 }
 
+#galeria, #mainGal {
+  background-color: #1E2D26;
+}
+
+.jumbotron {
+  background-color: #243560;
+}
+
+#rowIn {
+  background-color: #243560;
+}
+
 #info, #foto {
   background-color: #1E2D26;
   padding: 1rem;
@@ -123,10 +135,6 @@ form {
   border-radius: 5px;
 }
 
-.jumbotron {
-background-color: #4D71A5;
-}
-
 #galeria-div {
   margin: 1rem !important;
   border: none;
@@ -144,7 +152,6 @@ background-color: #4D71A5;
 }
 
 card-img-top {
-  border: 1px solid none;
   border-radius: 20px;
 }
 
@@ -184,6 +191,9 @@ card-img-top {
   }
   #foto {
     background-color: whitesmoke;
+  }
+  #rowIn {
+    background-color: transparent;
   }
 }
 @media (max-width: 900px) {
