@@ -1,5 +1,5 @@
 /* Variables */
-$font-principal: 'mondia';
+$font-principal: 'Georgia';
 $primary: #4D71A5;
 
 /* Map */
@@ -47,9 +47,6 @@ $color: (
 }
 main {
 	@include todo ($primary, none)
-}
-.jumbotron {
-	@include todo (#4D71A5, none)
 }
 #section-cont {
     color: map-get($color,'primary');
